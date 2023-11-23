@@ -1,0 +1,294 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    min-height: 0.7vh;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.btn-1{
+    color: white;
+    background: rgb(131, 211, 184);
+    border-radius: 50px;
+    transition: transform 0.3 ease;
+}
+
+.btn-1::after, .btn-1::before{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3 ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 7ch;
+    margin-right: 10px;
+}
+.nav{
+    
+}
+nav a{
+    font-weight: 400;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: rgb(63, 110, 95);
+    padding: 5px 10px;
+}
+
+@media (max-width:700px){
+   header{
+    flex-direction: column;
+   } 
+   nav{
+    padding: 10px 0px;
+   }
+}
+
+.imagen{
+    background-image: url(imagenes/Señora.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: calc(100% - 6) calc(100% - 3);
+    font-size: 150%;
+    padding:250px;
+    box-shadow: 0 0 5px black; 
+}
+
+h1{
+    color: white;
+}
+
+.p1{
+    color: white;  
+}
+
+.us{ 
+    width: 160px;
+    height: 160px;
+}
+.imagen2{
+    display: flex;
+    justify-content: center;
+    padding: 0% 10% 0% 10%;
+    margin: 3%;
+}
+
+.tit1{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+h2{
+    
+    font-family: 'Lucida Sans';
+    color: #00817f;
+}
+
+.empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+
+    padding-left: 15%;
+    padding-right: 12%;
+    color: #219997;
+    font-family: 'Lucida Sans';
+}
+
+.MVV{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0% 6% 0% 10%;
+    min-width: 70px;
+}
+
+.nosotros{
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Instalaciones{
+    margin-bottom: 10%;
+}
+.dpts{
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+.insta{
+    display: flex;
+}
+
+.MVV .p-01{
+    max-width: 350px;
+    padding-right: 5%;
+}
+.MVV .p-03{
+    max-width: 350px;
+    padding-left: 5%;
+}
+
+.imagen3{
+    block-size: 0%;
+}
+.testimonial{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.testimonio{
+    position: relative;  
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+.testimonio .imagenC{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonio .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.slide p{
+    text-align: center;
+    padding: 0 160px;
+    font-size: 14px;
+
+}
+.slide .quote-icon{
+    font-size: 30px;
+    color:#4070f4;
+
+}
+
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+.details .job{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 10px;
+    color: #219997;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #abe4e38a;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .box h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo1 .box p{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.pie-pagina .grupo1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color:#219997;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo2{
+    background-color: #00817f;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
