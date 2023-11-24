@@ -7,7 +7,11 @@ a{
     text-decoration: none;
     color: black;
 }
-
+}
+.Interlineado{
+    line-height: 5%;
+    text-decoration: none;
+}
 header{
     display: flex;
     min-height: 70px;
